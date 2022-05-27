@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Arquivei\LaravelPrometheusExporter;
 
@@ -39,7 +39,7 @@ class MetricsController extends Controller
      *
      * @return Response
      */
-    public function getMetrics() : Response
+    public function getMetrics(): Response
     {
         $metrics = $this->prometheusExporter->export();
 
